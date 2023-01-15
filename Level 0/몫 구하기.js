@@ -25,5 +25,12 @@ function solution(num1, num2) {
   }
 }
 
+//다른 사람 답안
+function solution2(a, b) {
+  // ~ 부정연산자를 두 번 사용하여 뒤집어주기 그럼 소수점이 사라지고 정수만 나온다
+  let answer = ~~(a / b);
+  return answer;
+}
+
 console.log(solution(10, 5));
 console.log(solution(7, 2));

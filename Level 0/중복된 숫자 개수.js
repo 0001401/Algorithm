@@ -25,4 +25,9 @@ function solution(array, n) {
   return answer.length;
 }
 
-console.log(solution([1, 1, 2, 3, 4, 5], 1));
+// 다른 답
+function solution2(array, n) {
+  return array.filter((v) => v === n).length;
+}
+
+console.log(solution2([1, 1, 2, 3, 4, 5], 1));

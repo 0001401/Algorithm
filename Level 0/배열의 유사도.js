@@ -21,4 +21,9 @@ function solution(s1, s2) {
   return s1.filter((item) => s2.includes(item)).length;
 }
 
-console.log(solution(["a", "b", "c"], ["com", "b", "p", "d", "c"]));
+//다른 풀이
+function solution2(s1, s2) {
+  return s1.length + s2.length - new Set([...s1, ...s2]).size;
+}
+
+console.log(solution2(["a", "b", "c"], ["com", "b", "p", "d", "c"]));

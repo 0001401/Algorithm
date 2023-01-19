@@ -22,3 +22,15 @@ function solution(numbers, direction) {
   }
   return numbers;
 }
+
+//다른 풀이
+function solution2(numbers, direction) {
+  if (direction === "right") {
+    numbers = [numbers.pop(), ...numbers];
+  } else {
+    numbers = [...numbers.slice(1), numbers.shift()];
+  }
+  return numbers;
+}
+
+console.log(solution([1, 2, 3], "right"));

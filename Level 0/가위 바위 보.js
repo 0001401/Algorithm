@@ -29,5 +29,11 @@ function solution(rsp) {
   return answer;
 }
 
+function solution2(rsp) {
+  let answer = { 0: "5", 2: "0", 5: "2" };
+
+  return [...rsp].map((item) => answer[item]).join("");
+}
+
 console.log(solution("2"));
 console.log(solution("205"));

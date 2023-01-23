@@ -20,4 +20,14 @@ function solution(order) {
   return value.length;
 }
 
-console.log(solution(29423));
+//다른 풀이
+function solution2(order) {
+  return order
+    .toString()
+    .split("")
+    .filter((value) =>
+      value === "3" || value === "6" || value === "9" ? true : false
+    ).length;
+}
+
+console.log(solution2(29423));
